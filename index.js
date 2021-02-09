@@ -12,12 +12,18 @@ console.log(typeof distanceToMars);
 console.log(typeof distanceToThemoon);
 console.log(typeof milesPerKilometer);
 
-let milesToMars =milesPerKilometer*distanceToMars;
+let milesToMars = milesPerKilometer*distanceToMars;
 let hourToMars= distanceToMars/shuttleSpeed;
-let dayToMars;
+let dayToMars= hourToMars/24;
 // Code your solution to exercises 3 and 4 here:
 
-console.log(milesToMars+" will take " +hourToMars+ " days to reach Mars."); 
+let milesToTheMoon = milesPerKilometer*distanceToThemoon;
+let hourToTheMoons= milesToTheMoon/shuttleSpeed;
+let dayToTheMoon = hourToMars/24;
+
+console.log(milesToMars+" will take " +dayToMars+ " days to reach Mars."); 
+
+console.log(milesToTheMoon+"will take"+dayToTheMoon +"days to reach the Moon.");
 
 
 
